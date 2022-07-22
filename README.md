@@ -3,8 +3,7 @@
 <img src="/statics/rss.png" height="128" width="128">
 
 ![Buy me a coffee](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white)
-
-![MIT](https://img.shields.io/github/license/rukshn/dm-feeds)
+![MIT](https://img.shields.io/github/license/rukshn/dm-feeds?style=for-the-badge&logo=Mit&logoColor=white)
 
 RSS is a great way to get content and read without any distractions.
 
