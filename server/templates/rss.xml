@@ -21,6 +21,6 @@
         <pubDate>{{ article.updated }}</pubDate>
         <description>{{ article.content }}</description>
       </item>
-    {% endfor % }
+    {% endfor %}
 </channel>
 </rss>
