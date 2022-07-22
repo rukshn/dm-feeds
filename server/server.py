@@ -42,7 +42,7 @@ def dailymirror():
         )
     )
     #  set the header to xml
-    resp.headers["Content-type"] = ": text/xml;charset=UTF-8"
+    resp.headers["Content-type"] = ": text/atom+xml;charset=UTF-8"
     #  return response
     return resp
 
@@ -72,6 +72,6 @@ def dailymirrorRss():
         )
     )
     # set the header to xml
-    resp.headers["Content-type"] = ": text/xml;charset=UTF-8"
+    resp.headers["Content-type"] = ": text/rss+xml;charset=UTF-8"
     # return the response
     return resp
