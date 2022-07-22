@@ -68,7 +68,7 @@ def scrape():
                     # extract the main article content
                     article_content = content.find(
                         "header", {"class": "inner-content"}
-                    ).text
+                    )
                     # extract the published time
                     gtime = content.find("span", {"class": "gtime"}).text
                     # convert the published time to a UTF time
