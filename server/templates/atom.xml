@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>{{ website_name }} Feed</title>
+  <subtitle>{{ website_name }} does not provide an RSS/Atom feed. So this was created to fill that void</subtitle>
+  <link href="{{ domain_name }}"/>
+  <updated>{{ updated_time }}</updated>
+  <author>
+    <name>{{ author }}</name>
+  </author>
+  <id>{{ domain_name }}</id>
+  <icon>{{ icon }}</icon>
+  <logo>{{ logo }}</logo>
+  <generator uri="https://ruky.me" version="1.0">
+    Feed Generator By Rukshan Ranatunge - rukshan@ruky.me
+  </generator>
+
+  {% for article in articles %}
+  <entry>
+    <title>{{ article.title }}</title>
+    <link href="{{ article.url }}"/>
+    <updated>{{ article.updated }}</updated>
+    <content>{{ article.content }}</content>
+  </entry>
+  {% endfor %}
+
+</feed>
