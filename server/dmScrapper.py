@@ -39,10 +39,6 @@ def scrape():
         # the latest news is contained within a div with an ID called breakingnewsads
         latestNews = soup.find("div", {"id": "breakingnewsads"})
 
-        headers = latestNews.findAll(
-            "div",
-        )
-
         # all all links (a tags) inside the breakingnewsads div
         links = latestNews.findAll("a", href=True)
 
@@ -92,6 +88,6 @@ def scrape():
         return linkList
     else:
         # if the status code to initial request is not 200 return the status code
-        print("error " + str(makeRequest.status_code))
-        print(makeRequest.text)
-        return makeRequest.status_code
+        print("error - error code: " + str(req[0]))
+        print(req[1])
+        return req[0]
