@@ -73,7 +73,7 @@ def scrape():
                     gtime = content.find("span", {"class": "gtime"}).text
                     # convert the published time to a UTF time
                     article_updated = (
-                        str(datetime.datetime.strptime(gtime, "%d %B %Y %H:%M %p"))
+                        str(datetime.datetime.strptime(gtime, "%d %B %Y %I:%M %p"))
                         + "+0530"
                     )
                 # extract the article title
