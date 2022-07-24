@@ -14,7 +14,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     # TODO: create a better landing page
-    return "<p>Hello, World!</p>"
+    return render_template("index.html")
 
 
 # daily mirror atom feed route
